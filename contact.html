@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Ashford &amp; Vale LLP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="brand">Ashford &amp; Vale<small>LLP · EST. 1998</small></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="links" id="navLinks">
+      <a href="practice.html">Practice Areas</a>
+      <a href="approach.html">Our Approach</a>
+      <a href="team.html">Our Lawyers</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="contact.html" class="cta-btn" style="display:inline-block; margin-top:8px;">Book a Consultation</a>
+    </nav>
+    <a href="contact.html" class="cta-btn desktop-only">Book a Consultation</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+      <div class="eyebrow">Get in Touch</div>
+      <h1>Start a conversation,<br>no strings attached.</h1>
+      <p class="lede">Whether it's an urgent matter or a long-term engagement, we'll connect you with the right partner within one business day.</p>
+    </div>
+  </section>
+
+  <section class="contact" style="border-top:none; padding-top:74px;">
+    <div class="wrap contact-grid">
+      <div class="reveal">
+        <form onsubmit="event.preventDefault(); this.querySelector('.submit-note').style.display='block';">
+          <div class="field">
+            <label for="name">Name / Organisation</label>
+            <input id="name" type="text" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" type="email" required>
+          </div>
+          <div class="field">
+            <label for="area">Relevant Practice Area</label>
+            <input id="area" type="text" placeholder="e.g. Corporate & M&A, Dispute Resolution…">
+          </div>
+          <div class="field">
+            <label for="msg">Brief Description</label>
+            <textarea id="msg" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="border:none; cursor:pointer;">Submit Inquiry <span class="arrow">→</span></button>
+          <p class="submit-note" style="display:none; margin-top:18px; font-size:13px; color:var(--brass);">Thank you — we've received your message and will be in touch within one business day.</p>
+        </form>
+      </div>
+      <div class="contact-info reveal">
+        <div class="info-block">
+          <h5>Headquarters</h5>
+          <div>1 Bishopsgate, London EC2N 3AR</div>
+          <div class="sub">32nd Floor</div>
+        </div>
+        <div class="info-block">
+          <h5>Phone</h5>
+          <div>+44 20 7946 0958</div>
+        </div>
+        <div class="info-block">
+          <h5>Email</h5>
+          <div>contact@ashfordvale.com</div>
+        </div>
+        <div class="info-block">
+          <h5>Office Hours</h5>
+          <div>Monday–Friday, 9:00–19:00</div>
+          <div class="sub">Urgent matters answered around the clock</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="offices">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="eyebrow">Offices</div>
+        <h2>Six cities, ready to advise close to home</h2>
+      </div>
+      <div class="office-grid reveal">
+        <div class="office-card">
+          <h4>London (HQ)</h4>
+          <span class="tag">London HQ</span>
+          <div class="line">1 Bishopsgate</div>
+          <div class="line">32nd Floor, EC2N 3AR</div>
+        </div>
+        <div class="office-card">
+          <h4>New York</h4>
+          <span class="tag">New York</span>
+          <div class="line">1 Liberty Plaza</div>
+          <div class="line">28th Floor</div>
+        </div>
+        <div class="office-card">
+          <h4>Hong Kong</h4>
+          <span class="tag">Hong Kong</span>
+          <div class="line">8 Finance Street, Central</div>
+          <div class="line">IFC Two, Level 45</div>
+        </div>
+        <div class="office-card">
+          <h4>Singapore</h4>
+          <span class="tag">Singapore</span>
+          <div class="line">1 Raffles Place</div>
+          <div class="line">Level 30</div>
+        </div>
+        <div class="office-card">
+          <h4>Dubai</h4>
+          <span class="tag">Dubai</span>
+          <div class="line">DIFC, Gate Village 5</div>
+          <div class="line">Level 4</div>
+        </div>
+        <div class="office-card">
+          <h4>Geneva</h4>
+          <span class="tag">Geneva</span>
+          <div class="line">Rue du Rhône 65</div>
+          <div class="line">3rd Floor</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot-row">
+    <div>© 2026 Ashford &amp; Vale LLP. All rights reserved.</div>
+    <div class="foot-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Legal Notices</a>
+      <a href="#">Careers</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

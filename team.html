@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Lawyers | Ashford &amp; Vale LLP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="brand">Ashford &amp; Vale<small>LLP · EST. 1998</small></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="links" id="navLinks">
+      <a href="practice.html">Practice Areas</a>
+      <a href="approach.html">Our Approach</a>
+      <a href="team.html" class="active">Our Lawyers</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="cta-btn" style="display:inline-block; margin-top:8px;">Book a Consultation</a>
+    </nav>
+    <a href="contact.html" class="cta-btn desktop-only">Book a Consultation</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Our Lawyers</div>
+      <div class="eyebrow">Our Lawyers</div>
+      <h1>A partner-led bench<br>of specialists.</h1>
+      <p class="lede">Core team members hold degrees from leading law schools worldwide and bring a decade or more of frontline practice. Filter by practice area below.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:74px;">
+    <div class="wrap">
+
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="corp">Corporate &amp; M&amp;A</button>
+        <button class="filter-btn" data-filter="dispute">Dispute Resolution</button>
+        <button class="filter-btn" data-filter="ip">Intellectual Property</button>
+        <button class="filter-btn" data-filter="cross">Cross-Border &amp; Compliance</button>
+      </div>
+
+      <div class="team-grid reveal">
+        <div class="team-card" data-cat="corp">
+          <div class="team-photo" data-initial="NA"></div>
+          <h4>Nathaniel Ashford</h4>
+          <div class="role">Founding Partner · Corporate &amp; M&amp;A</div>
+          <p>Nearly two decades in cross-border M&amp;A and private investment, leading several landmark transactions.</p>
+        </div>
+        <div class="team-card" data-cat="dispute">
+          <div class="team-photo" data-initial="JR"></div>
+          <h4>Julian Reyes</h4>
+          <div class="role">Partner · Dispute Resolution</div>
+          <p>Handles complex commercial litigation and international arbitration with consistently strong client reviews.</p>
+        </div>
+        <div class="team-card" data-cat="ip">
+          <div class="team-photo" data-initial="MC"></div>
+          <h4>Mireille Chen</h4>
+          <div class="role">Partner · Intellectual Property</div>
+          <p>Focused on patent and trade secret protection, serving a roster of technology and life-sciences clients.</p>
+        </div>
+        <div class="team-card" data-cat="cross">
+          <div class="team-photo" data-initial="SO"></div>
+          <h4>Samuel Okafor</h4>
+          <div class="role">Partner · Cross-Border &amp; Compliance</div>
+          <p>Advises multinational clients on compliance frameworks and international market entry.</p>
+        </div>
+        <div class="team-card" data-cat="corp">
+          <div class="team-photo" data-initial="EV"></div>
+          <h4>Elena Voss</h4>
+          <div class="role">Partner · Corporate &amp; M&amp;A</div>
+          <p>Focused on private financing and equity incentive design, serving several publicly listed clients.</p>
+        </div>
+        <div class="team-card" data-cat="dispute">
+          <div class="team-photo" data-initial="PN"></div>
+          <h4>Priya Nandan</h4>
+          <div class="role">Partner · Dispute Resolution</div>
+          <p>Handles cross-border arbitration and urgent asset-preservation matters under tight timelines.</p>
+        </div>
+        <div class="team-card" data-cat="ip">
+          <div class="team-photo" data-initial="MW"></div>
+          <h4>Marcus Whitfield</h4>
+          <div class="role">Partner · Intellectual Property</div>
+          <p>Focused on patent litigation and technology licensing, with a background in electrical engineering.</p>
+        </div>
+        <div class="team-card" data-cat="cross">
+          <div class="team-photo" data-initial="IC"></div>
+          <h4>Isabelle Cho</h4>
+          <div class="role">Partner · Cross-Border &amp; Compliance</div>
+          <p>Focused on export controls and sanctions compliance, based long-term out of the Singapore office.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="wrap" style="text-align:center; padding:44px 0 0;">
+      <h2 style="font-family:var(--serif); font-weight:500; font-size:clamp(24px,2.8vw,34px); margin-bottom:24px;">Want to speak with a specific partner?</h2>
+      <a href="contact.html" class="btn-primary">Schedule a Meeting <span class="arrow">→</span></a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot-row">
+    <div>© 2026 Ashford &amp; Vale LLP. All rights reserved.</div>
+    <div class="foot-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Legal Notices</a>
+      <a href="#">Careers</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      document.querySelectorAll('.team-card').forEach(card => {
+        card.hidden = !(filter === 'all' || card.dataset.cat === filter);
+      });
+    });
+  });
+</script>
+</body>
+</html>
