@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Locations | Whitmore Hale LLP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <header class="site">
+    <div class="wrap nav-inner">
+      <a href="index.html" class="brand">WHITMORE <span>HALE</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="links" id="navLinks">
+        <a href="practices.html">Practices</a>
+        <a href="people.html">People</a>
+        <a href="insights.html">Insights</a>
+        <a href="contact.html" class="active">Locations</a>
+        <a href="contact.html" class="cta-btn" style="display:inline-block; margin-top:10px;">Contact Us</a>
+      </nav>
+      <div class="nav-icons">
+        <a href="contact.html" class="cta-btn desktop-only">Contact Us</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+        <div class="eyebrow">Get in Touch</div>
+        <h1>Let's talk about your matter</h1>
+        <p class="lede">Tell us briefly what you need, and we'll route your message to the right practice group within
+          one business day.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap contact-grid">
+        <div class="reveal">
+          <form onsubmit="event.preventDefault(); this.querySelector('.submit-note').style.display='block';">
+            <div class="field">
+              <label for="name">Full Name</label>
+              <input id="name" type="text" required>
+            </div>
+            <div class="field">
+              <label for="org">Organization</label>
+              <input id="org" type="text">
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" type="email" required>
+            </div>
+            <div class="field">
+              <label for="practice">Practice Area</label>
+              <select id="practice">
+                <option>Business &amp; Corporate</option>
+                <option>Litigation</option>
+                <option>Intellectual Property</option>
+                <option>Labor &amp; Employment</option>
+                <option>Data Privacy &amp; Cybersecurity</option>
+                <option>Tax</option>
+                <option>Real Estate</option>
+                <option>Healthcare</option>
+                <option>Financial Services</option>
+                <option>Not sure</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="msg">Brief Description</label>
+              <textarea id="msg" required></textarea>
+            </div>
+            <button type="submit" class="cta-btn" style="border:none; cursor:pointer; padding:15px 28px;">Submit
+              Inquiry</button>
+            <p class="submit-note" style="display:none; margin-top:18px; font-size:13px; color:var(--red);">Thank you —
+              we've received your message and will follow up within one business day.</p>
+          </form>
+        </div>
+        <div class="contact-info reveal">
+          <div class="info-block">
+            <h5>Headquarters</h5>
+            <div>200 Public Square, Suite 3100</div>
+            <div class="sub">Cleveland, OH 44114</div>
+          </div>
+          <div class="info-block">
+            <h5>Main Line</h5>
+            <div>+1 (216) 555-0142</div>
+          </div>
+          <div class="info-block">
+            <h5>Email</h5>
+            <div>contact@whitmorehale.com</div>
+          </div>
+          <div class="info-block">
+            <h5>Office Hours</h5>
+            <div>Monday–Friday, 8:30 AM–6:00 PM ET</div>
+            <div class="sub">Urgent matters answered around the clock</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-alt">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <div>
+            <div class="eyebrow">Locations</div>
+            <h2>Six offices nationwide</h2>
+          </div>
+        </div>
+        <div class="office-grid reveal">
+          <div class="office-card">
+            <h4>Cleveland</h4>
+            <span class="tag">Headquarters</span>
+            <div class="line">200 Public Square, Suite 3100</div>
+            <div class="line">Cleveland, OH 44114</div>
+          </div>
+          <div class="office-card">
+            <h4>Washington, D.C.</h4>
+            <span class="tag">East Coast</span>
+            <div class="line">1050 Connecticut Ave NW</div>
+            <div class="line">Washington, DC 20036</div>
+          </div>
+          <div class="office-card">
+            <h4>New York</h4>
+            <span class="tag">East Coast</span>
+            <div class="line">45 Rockefeller Plaza</div>
+            <div class="line">New York, NY 10111</div>
+          </div>
+          <div class="office-card">
+            <h4>Chicago</h4>
+            <span class="tag">Midwest</span>
+            <div class="line">200 W Madison St</div>
+            <div class="line">Chicago, IL 60606</div>
+          </div>
+          <div class="office-card">
+            <h4>Houston</h4>
+            <span class="tag">South</span>
+            <div class="line">1000 Louisiana St</div>
+            <div class="line">Houston, TX 77002</div>
+          </div>
+          <div class="office-card">
+            <h4>Los Angeles</h4>
+            <span class="tag">West Coast</span>
+            <div class="line">633 W 5th St</div>
+            <div class="line">Los Angeles, CA 90071</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <div class="foot-brand">WHITMORE <span>HALE</span></div>
+          <p>A full-service Am Law 100 firm advising businesses and institutions across nine practice areas nationwide.
+          </p>
+        </div>
+        <div class="foot-col">
+          <h5>Firm</h5>
+          <a href="index.html">About Us</a>
+          <a href="people.html">People</a>
+          <a href="#">Careers</a>
+          <a href="#">Diversity</a>
+        </div>
+        <div class="foot-col">
+          <h5>Work</h5>
+          <a href="practices.html">Practices</a>
+          <a href="index.html">Industries</a>
+          <a href="insights.html">Insights</a>
+        </div>
+        <div class="foot-col">
+          <h5>Connect</h5>
+          <a href="contact.html">Locations</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="foot-col">
+          <h5>Follow</h5>
+          <a href="#">Twitter / X</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <div>© 2026 Whitmore Hale LLP. All rights reserved.</div>
+        <div class="foot-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Attorney Advertising</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

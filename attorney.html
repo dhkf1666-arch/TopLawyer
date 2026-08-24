@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attorney | Whitmore Hale LLP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+  <header class="site">
+    <div class="wrap nav-inner">
+      <a href="index.html" class="brand">WHITMORE <span>HALE</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="links" id="navLinks">
+        <a href="practices.html">Practices</a>
+        <a href="people.html" class="active">People</a>
+        <a href="insights.html">Insights</a>
+        <a href="contact.html">Locations</a>
+        <a href="contact.html" class="cta-btn" style="display:inline-block; margin-top:10px;">Contact Us</a>
+      </nav>
+      <div class="nav-icons">
+        <a href="contact.html" class="cta-btn desktop-only">Contact Us</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="breadcrumb"><a href="index.html">Home</a> / <a href="people.html">People</a> / <span
+            id="crumbName">Attorney</span></div>
+        <div class="eyebrow" id="bioPractice">Practice Area</div>
+        <h1 id="bioName">Attorney Name</h1>
+        <p class="lede" id="bioRole">Role</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap bio-grid">
+        <div class="bio-side">
+          <div class="bio-gallery" id="bioGallery"></div>
+          <div class="info-block">
+            <h5>Contact</h5>
+            <div id="bioEmail"></div>
+            <div id="bioPhone"></div>
+            <div class="sub" id="bioOffice"></div>
+          </div>
+          <a href="contact.html" class="cta-btn">Contact This Attorney</a>
+        </div>
+
+        <div class="bio-content">
+          <div id="bioParagraphs"></div>
+          <span class="practice-tag" id="bioPracticeTag">Practice</span>
+
+          <div class="credentials">
+            <div>
+              <h5>Education</h5>
+              <ul id="bioEducation"></ul>
+            </div>
+            <div>
+              <h5>Admissions</h5>
+              <ul id="bioAdmissions"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" style="padding:90px 0;">
+      <div class="wrap">
+        <h2>Ready to discuss your matter?</h2>
+        <a href="contact.html" class="btn-white">Contact Whitmore Hale <span class="arrow">→</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <div class="foot-brand">WHITMORE <span>HALE</span></div>
+          <p>A full-service Am Law 100 firm advising businesses and institutions across nine practice areas nationwide.
+          </p>
+        </div>
+        <div class="foot-col">
+          <h5>Firm</h5>
+          <a href="index.html">About Us</a>
+          <a href="people.html">People</a>
+          <a href="#">Careers</a>
+          <a href="#">Diversity</a>
+        </div>
+        <div class="foot-col">
+          <h5>Work</h5>
+          <a href="practices.html">Practices</a>
+          <a href="index.html">Industries</a>
+          <a href="insights.html">Insights</a>
+        </div>
+        <div class="foot-col">
+          <h5>Connect</h5>
+          <a href="contact.html">Locations</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="#">Client Login</a>
+        </div>
+        <div class="foot-col">
+          <h5>Follow</h5>
+          <a href="#">LinkedIn</a>
+          <a href="#">Twitter / X</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <div>© 2026 Whitmore Hale LLP. All rights reserved.</div>
+        <div class="foot-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Attorney Advertising</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // ---- attorney data (edit / extend as needed) ----
+    const attorneyData = {
+      'robert-hale': {
+        name: 'Oren J. Warshavsky',
+        practice: 'BakerHostetler',
+        photos: ['images/1.png'],
+        email: 'kaieager@eclipsezen.com',
+        phone: '+1 (832) 345-4051',
+        bio: [
+          'Robert Warshavsky is the co-leader of BakerHostetler\'s Global Fraud and International Asset Tracing and Recovery team. His practice focuses on multi-jurisdictional litigation, international asset tracing and recovery, cross-border litigation, intellectual property, bankruptcy, commercial disputes, digital assets, and related complex matters.',
+
+          'According to BakerHostetler\'s official profile, Warshavsky has secured over $9 billion in monetary recoveries for clients. His representative experience includes the Bernard L. Madoff Investment Securities liquidation case, where he provided legal services to the liquidation trustee team.',
+
+          'His international asset recovery practice includes tracing and recovering assets across borders, enforcement of foreign judgments, and enforcement of international arbitration awards. He has also been involved in litigation concerning Nazi-looted artworks related to Egon Schiele. In 2024, the New York State Supreme Court issued a ruling regarding ownership of a Schiele watercolor, and BakerHostetler\'s official page lists Warshavsky as counsel in that case.'
+        ],
+        education: ['J.D., Case Western Reserve University School of Law', 'B.A., Economics, Ohio State University'],
+        admissions: ['Ohio', 'U.S. District Court, Northern District of Ohio']
+      },
+      'diane-okafor': {
+        name: 'John B. Quinn',
+        role: 'Partner · Litigation',
+        practice: 'Litigation',
+        initials: 'DO',
+        photos: ['images/2.png'],
+        email: 'kaieager@eclipsezen.com',
+        phone: '+1 (832) 345-4051',
+        bio: [
+          'John Quinn is the Founder and Chairman of Quinn Emanuel, focusing on commercial litigation, international disputes, crisis management, and arbitration. Quinn Emanuel currently has more than 1,300 lawyers across 33 offices in 12 countries.',
+
+          'According to Quinn Emanuel\'s official profile, John Quinn has a long-standing practice in high-stakes commercial litigation. He has been recognized by The American Lawyer as a "master strategist" and named a Legal Legend by Lawdragon.',
+
+          'One of his most notable representative matters is the 3M Combat Arms Earplugs Litigation, in which Quinn Emanuel represented more than 250,000 service members in related litigation. The litigation ultimately resulted in a settlement of approximately $6.01 billion. Quinn Emanuel\'s official materials in 2026 continue to identify the case as one of John Quinn\'s major victories.'
+        ],
+        education: ['J.D., University of Michigan Law School', 'B.A., Political Science, University of Virginia'],
+        admissions: ['Ohio', 'New York', 'U.S. Court of Appeals, Sixth Circuit']
+      },
+      'marcus-feldman': {
+        name: 'Alex Spiro',
+        role: 'Partner · Intellectual Property',
+        practice: 'Intellectual Property',
+        initials: 'MF',
+        photos: ['images/3.png'],
+        email: 'kaieager@eclipsezen.com',
+        phone: '+1 (832) 345-4051',
+        office: 'New York',
+        bio: [
+          'Alex Spiro is a prominent American criminal defense and litigation attorney. He graduated from Harvard Law School and previously served as a Manhattan prosecutor before entering private practice. According to Quinn Emanuel\'s official profile, he has tried more than 50 cases to verdict as lead counsel.',
+
+          'Earlier in his career as a prosecutor, Spiro was involved in several significant criminal matters, including the Rodney Alcala case, the Travis Woods case, and investigations conducted by the Conviction Integrity Unit involving potential wrongful convictions.',
+
+          'His practice has since expanded to include white-collar criminal defense, corporate internal investigations, securities, intellectual property, bankruptcy, financial disputes, digital assets, and media and entertainment litigation. Quinn Emanuel also identifies him as a prominent attorney within its Blockchain and Digital Asset Practice.'
+        ],
+        education: ['J.D., Columbia Law School', 'B.S., Electrical Engineering, Georgia Institute of Technology'],
+        admissions: ['New York', 'U.S. Patent and Trademark Office']
+      },
+      'angela-whitmore': {
+        name: 'Loretta E. Lynch',
+        role: 'Partner · Labor & Employment',
+        practice: 'Labor & Employment',
+        initials: 'AW',
+        photos: ['images/4.png'],
+        email: 'kaieager@eclipsezen.com',
+        phone: '+1 (832) 345-4051',
+        bio: [
+          'Loretta Lynch is a distinguished American attorney whose practice focuses on white-collar matters, government investigations, the Foreign Corrupt Practices Act (FCPA), anti-corruption, internal investigations, and high-stakes litigation. She served as the 83rd Attorney General of the United States from 2015 to 2017.',
+
+          'According to Paul Weiss\'s official profile, Lynch twice served as the U.S. Attorney for the Eastern District of New York and held several senior positions at the U.S. Department of Justice. Her government experience includes leading complex federal investigations and enforcement matters involving financial crimes, corruption, and corporate misconduct.',
+
+          'Her representative matters include an internal investigation involving BlackRock, an independent investigation into the Department of Public Safety at Syracuse University, an NCAA investigation involving North Carolina State University, an internal investigation for a Fortune 50 energy company, and high-profile discrimination litigation involving McDonald\'s. She has also advised companies on ESG, compliance, and corporate governance matters.',
+
+          'In her independent investigation for Syracuse University, Lynch led a team that interviewed 77 witnesses and reviewed extensive documentary, video, and internal materials. Her combination of senior government experience and private-practice work makes her particularly experienced in complex investigations, regulatory matters, and high-stakes corporate disputes.'
+        ],
+        education: ['J.D., Case Western Reserve University School of Law', 'B.A., Labor Relations, Cornell University'],
+        admissions: ['Ohio']
+      },
+      'thomas-reyes': {
+        name: 'Neal Katyal',
+        role: 'Partner · Tax',
+        practice: 'Tax',
+        initials: 'TR',
+        photos: ['images/5.png'],
+        email: 'kaieager@eclipsezen.com',
+        phone: '+1 (832) 345-4051',
+        bio: [
+          'Neal Katyal is a prominent American appellate and Supreme Court litigator whose practice focuses on Supreme Court litigation, appellate litigation, constitutional law, government investigations, and complex commercial disputes. He previously served as the U.S. Solicitor General and is a key leader of Hogan Lovells\' appellate practice.',
+
+          'According to Hogan Lovells\' official profile, Katyal has argued numerous significant cases before the U.S. Supreme Court and has received longstanding recognition from organizations including Chambers and Lawdragon. His practice encompasses some of the most consequential constitutional, regulatory, and appellate matters in the United States.',
+
+          'His representative matters include Moore v. Harper, a major U.S. Supreme Court election and constitutional case in which Katyal represented Common Cause, and Allen v. Milligan, which involved Alabama congressional redistricting and the Voting Rights Act, where the Hogan Lovells team achieved a significant victory.',
+
+          'Katyal also served as a member of the Minnesota Special Attorney General\'s team in the appeal arising from the George Floyd case, helping successfully defend Derek Chauvin\'s second-degree murder conviction. His combination of Supreme Court experience, government service, and complex appellate litigation makes him one of the most prominent appellate advocates in the United States.'
+        ],
+        education: ['LL.M., Taxation, New York University School of Law', 'J.D., Georgetown University Law Center'],
+        admissions: ['District of Columbia', 'New York', 'U.S. Tax Court']
+      },
+      'sarah-lindqvist': {
+        name: 'Richard E. “Rick” Climan',
+        role: 'Partner · Data Privacy & Cybersecurity',
+        practice: 'Data Privacy & Cybersecurity',
+        initials: 'SL',
+        photos: ['images/6.png'],
+        email: 'kaieager@eclipsezen.com',
+        phone: '+1 (832) 345-4051',
+        bio: [
+          'He is a highly experienced corporate attorney who has practiced technology and life sciences M&A for more than 30 years. According to Hogan Lovells\' official profile, he is recognized as a leading figure in technology M&A and has advised clients on some of the most significant transactions in the sector.',
+
+          'His representative transactions include Walmart\'s approximately $16 billion acquisition of a roughly 77% stake in Flipkart, one of the largest technology and e-commerce transactions in India, and Marvell Technology\'s approximately $10 billion acquisition of Inphi, a major semiconductor industry transaction.',
+
+          'These matters reflect his extensive experience handling large-scale and cross-border technology M&A transactions. He has also been inducted into the Lawdragon Hall of Fame, and Hogan Lovells describes him as one of Silicon Valley\'s most prominent technology M&A lawyers.'
+        ],
+        education: ['J.D., Fordham University School of Law', 'B.S., Computer Science, University of Wisconsin–Madison'],
+        admissions: ['New York', 'Certified Information Privacy Professional (CIPP/US)']
+      },
+      'james-cho': {
+        name: 'John Rhie',
+        role: 'Partner · Real Estate',
+        practice: 'Real Estate',
+        initials: 'JC',
+        photos: ['images/7.png'],
+        email: 'kaieager@eclipsezen.com',
+        phone: '+1 (832) 345-4051',
+        bio: [
+          'John Rhie is the Managing Partner of Quinn Emanuel\'s Asia-Pacific region and the head of its international arbitration practice in Asia. His practice focuses on international commercial arbitration, investment treaty arbitration, cross-border litigation, international commercial disputes, and white-collar crime. He has extensive experience as both counsel and arbitrator before major arbitral institutions, including HKIAC, ICC, ICSID, KCAB, LCIA, and SIAC, as well as in ad hoc arbitrations worldwide.',
+
+          'According to Quinn Emanuel\'s official profile, Rhie is widely recognized as a leading international arbitration practitioner. He has been consistently ranked by major legal publications, including Chambers & Partners and The Legal 500. Chambers & Partners has recognized him as a Band 1 practitioner in Greater China and Korea, while clients have praised his strategic thinking, judgment, and ability to handle complex international disputes. He was also recognized by the Asian Legal Business Awards as the International Law Firm Leader of the Year in 2024.',
+
+          'His representative matters include representing Bombardier Transportation and Daelim Construction in a PPP arbitration against a Korean local government, which resulted in an arbitration award exceeding $750 million. He has also represented Korean private equity funds, international investment banks, major Korean manufacturers, international energy companies, UFC, and Formula One Administration in significant cross-border disputes.',
+
+          'Rhie has handled disputes involving post-acquisition claims valued at approximately $1 billion, as well as SIAC arbitrations involving Korean private equity funds. His cross-border litigation experience includes matters before the English High Court and complex, high-value disputes spanning multiple jurisdictions, including the United States, Panama, the British Virgin Islands, and South Korea.',
+
+          'In addition to his practice as counsel, Rhie frequently serves as an arbitrator. He has taught as an adjunct professor at Seoul National University and the Judicial Research and Training Institute of the Supreme Court of Korea. He has also been appointed to arbitration panels and committees associated with institutions including the Hong Kong International Arbitration Centre, the China International Economic and Trade Arbitration Commission, and the KCAB International Arbitration Court.'
+        ],
+        education: ['J.D., Ohio State University Moritz College of Law', 'B.B.A., Finance, University of Notre Dame'],
+        admissions: ['Ohio']
+      },
+      'priya-raman': {
+        name: 'Susanna M. Buerge',
+        role: 'Partner · Healthcare',
+        practice: 'Healthcare',
+        initials: 'PR',
+        photos: ['images/8.png'],
+        email: 'kaieager@eclipsezen.com',
+        phone: '+1 (832) 345-4051',
+        bio: [
+          'Susanna Buergel is a leading securities and commercial litigator whose practice focuses on securities litigation, white-collar defense, internal investigations, and restructuring litigation. She is a partner in Paul Weiss\'s Litigation Department and serves as co-chair of the firm\'s Securities Litigation & Enforcement Group. She earned her J.D. from Columbia Law School in 1999, where she served as an Articles Editor of the Columbia Law Review and was a Harlan Fiske Stone Scholar.',
+
+          'Buergel has extensive experience defending financial institutions, corporations, and underwriters in complex securities and commercial matters in federal and state courts across the United States. She also regularly represents clients before the Securities and Exchange Commission, the U.S. Department of Justice, and numerous federal and state regulators. Her representative matters include defending the underwriting syndicates in securities class actions arising from the Altice USA, Canaan Inc., Lizhi, and Opera Limited IPOs, as well as representing Barclays Capital and Macquarie Infrastructure in securities litigation.',
+
+          'Her recent and notable representations include Citigroup in multiple securities, regulatory, and commercial matters, including appellate and Delaware Chancery Court victories; Morgan Stanley in significant antitrust and data-breach class actions; Nikola Corporation and its officers and directors in securities and derivative litigation; Fresenius in successfully terminating its proposed $4.3 billion acquisition of Akorn Pharmaceuticals following alleged FDA data-integrity issues; Viking Global Investors in a Delaware Chancery Court dispute; Virtu Financial in litigation relating to its $1.4 billion acquisition of Knight Capital Group; and Ericsson in securities class action litigation in the Southern District of New York.',
+
+          'Buergel has also represented major financial institutions in investigations involving antitrust issues, Bank Secrecy Act and anti-money-laundering compliance, sales practices, incentive compensation, and other regulatory matters. She has received extensive recognition from leading legal publications and directories, including Chambers USA, Legal 500 US, Benchmark Litigation, Law360, and Lawdragon. She has been recognized as a Band 1 practitioner for Securities: Litigation in New York by Chambers USA and has been repeatedly named among the leading securities and financial services litigators in the United States.',
+
+          'Among her professional honors, Buergel has been named a Law360 MVP multiple times, recognized among Law360\'s Most Influential Women in Securities Law, and selected as a Lawdragon Legal Legend. She has also been repeatedly recognized among Lawdragon\'s 500 Leading Lawyers and Benchmark Litigation\'s leading litigation practitioners. In addition to her private practice, she serves as an adjunct lecturer at Columbia Law School, where she teaches trial practice.'
+        ],
+        education: ['J.D., University of Chicago Law School', 'B.A., Biology, Washington University in St. Louis'],
+        admissions: ['Ohio', 'Illinois']
+      }
+    };
+
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id');
+    const a = attorneyData[id];
+
+    if (a) {
+      document.title = a.name + ' | Whitmore Hale LLP';
+      document.getElementById('crumbName').textContent = a.name;
+      document.getElementById('bioPractice').textContent = a.practice;
+      document.getElementById('bioPracticeTag').textContent = a.practice;
+      document.getElementById('bioName').textContent = a.name;
+      document.getElementById('bioRole').textContent = a.role;
+      document.getElementById('bioEmail').textContent = a.email;
+      document.getElementById('bioPhone').textContent = a.phone;
+      document.getElementById('bioOffice').textContent = a.office;
+
+      const gallery = document.getElementById('bioGallery');
+      const photos = (a.photos || []).slice(0, 3);
+      if (photos.length === 0) {
+        gallery.className = 'bio-gallery';
+        gallery.innerHTML = `<div class="bio-photo" data-initial="${a.initials}"></div>`;
+      } else if (photos.length === 1) {
+        gallery.className = 'bio-gallery';
+        gallery.innerHTML = `<div class="bio-photo"><img src="${photos[0]}" alt="${a.name}"></div>`;
+      } else if (photos.length === 2) {
+        gallery.className = 'bio-gallery bio-gallery-2';
+        gallery.innerHTML = photos.map(p => `<div class="bio-photo"><img src="${p}" alt="${a.name}"></div>`).join('');
+      } else {
+        gallery.className = 'bio-gallery bio-gallery-3';
+        gallery.innerHTML = `
+        <div class="bio-photo bio-photo-main"><img src="${photos[0]}" alt="${a.name}"></div>
+        <div class="bio-photo-sub">
+          <div class="bio-photo"><img src="${photos[1]}" alt="${a.name}"></div>
+          <div class="bio-photo"><img src="${photos[2]}" alt="${a.name}"></div>
+        </div>`;
+      }
+
+      const paraWrap = document.getElementById('bioParagraphs');
+      a.bio.forEach(p => {
+        const el = document.createElement('p');
+        el.textContent = p;
+        paraWrap.appendChild(el);
+      });
+
+      const eduList = document.getElementById('bioEducation');
+      a.education.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item;
+        eduList.appendChild(li);
+      });
+
+      const admitList = document.getElementById('bioAdmissions');
+      a.admissions.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item;
+        admitList.appendChild(li);
+      });
+    } else {
+      document.getElementById('crumbName').textContent = 'Not Found';
+      document.getElementById('bioName').textContent = 'Attorney Not Found';
+      document.getElementById('bioRole').textContent = 'We could not find a profile for this attorney.';
+      document.getElementById('bioPractice').textContent = '';
+      document.getElementById('bioParagraphs').innerHTML = '<p>Please return to the <a href="people.html" style="color:var(--red); text-decoration:underline;">People</a> page and select an attorney.</p>';
+    }
+  </script>
+</body>
+
+</html>
